@@ -1,0 +1,7 @@
+<div>
+    <a *ngFor="let product of products" 
+        routerLink="/detail/{{ product.id }}"    
+    >
+        [ {{ product.id }} {{ product.name }} ]
+    </a>
+</div>
