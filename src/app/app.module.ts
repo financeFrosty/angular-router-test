@@ -7,13 +7,15 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
     ProductDetailComponent,
-    DashboardComponent
+    DashboardComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,

@@ -17,8 +17,13 @@ export class ProductsComponent implements OnInit {
     this.products = this.productService.getProducts();
   }
 
+  getProductsAsync(): void {
+    this.productService.getProductsAsync()
+      .subscribe(products => this.products = products);
+  }
+
   ngOnInit(): void {
-    this.getProducts();
+    this.getProductsAsync();
   }
 
 }
